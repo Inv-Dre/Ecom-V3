@@ -4,7 +4,7 @@ import './cart.css';
 function CartBtn() {
   return (
     <>
-
+      
       <Dropdown className='cart-btn'>
       <Dropdown.Toggle variant="outline-primary" id="dropdown-basic">
         Cart
@@ -16,7 +16,7 @@ function CartBtn() {
         <Dropdown.Item href="#/action-3">ITEM3</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
-
+      
     </>
   );
 }

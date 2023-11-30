@@ -1,8 +1,33 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcryptjs');
+const Order = require('./Order');
+const Product = require('./Product')
+// import schema from Product.js
 
-// import schema from Book.js
-const productSchema = require('./Product');
+// const productSchema = new Schema({
+//   productName: {
+//       type: String,
+//       required: true,
+//   },
+//   price: {
+//       type: String,
+//       required: true,
+//   },
+//   quantity: {
+//       type: String,
+//       required: true,
+//   },
+//   image: {
+//       type: String,
+//   },
+//   description:{
+//       type: String,
+//   }, 
+//   productId: {
+//       type: String,
+//       required: true,
+//   }
+// })
 
 const userSchema = new Schema(
   {
@@ -21,8 +46,8 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    // set savedBooks to be an array of data that adheres to the bookSchema
-    cart: [productSchema],
+    
+    orders: [Order.schema]
   },
   // set this to use virtual below
   {

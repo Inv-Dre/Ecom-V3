@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Dropdown from "react-bootstrap/Dropdown";
-// import './searchbar.css';
+import './searchbar.css';
 
 function SearchBar() {
   return (
